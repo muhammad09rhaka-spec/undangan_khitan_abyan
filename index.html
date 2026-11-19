@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#dff5ff">
+  <title>Undangan Khitanan Abyan | Kereta Ceria</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { ink:"#17324d", skysoft:"#dff5ff", orange:"#ff963d", butter:"#ffe08a", grass:"#80c99b" },
+        fontFamily: { rounded:["Nunito","ui-rounded","system-ui","sans-serif"] }
+      }}
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-rounded text-ink">
+  <audio id="bgMusic" src="assets/blue-instrumental.mp3" preload="auto" loop></audio>
+
+  <div id="welcome" class="welcome-screen">
+    <div class="welcome-cloud cloud-left"></div><div class="welcome-cloud cloud-right"></div>
+    <div class="welcome-card">
+      <div class="text-6xl">🚂</div>
+      <p class="mt-4 text-sm font-black uppercase tracking-[.2em] text-orange">Tiket spesial untuk teman-teman</p>
+      <h1 class="mt-2 text-3xl font-black sm:text-4xl">Hai, Teman-Teman!</h1>
+      <p class="mt-3 font-bold leading-relaxed text-slate-600">Abyan punya kabar seru nih! Yuk, buka undangannya dan ikut meramaikan hari bahagia Abyan! 🎉</p>
+      <button id="openInvitation" class="primary-button mt-7">Buka Undangan <span>→</span></button>
+      <p class="mt-4 text-xs font-bold text-slate-400">Klik untuk masuk dan memutar musik 🎵</p>
+    </div>
+    <div class="welcome-train">🚂　🚃　🚃</div>
+  </div>
+
+  <header class="hero relative overflow-hidden">
+    <nav class="relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+      <a href="#" class="text-xl font-black">🚂 Kereta Ceria</a>
+      <a href="#detail" class="rounded-full bg-white/90 px-5 py-2.5 text-sm font-black shadow">Lihat Detail</a>
+    </nav>
+    <main class="relative z-10 mx-auto grid min-h-[650px] max-w-6xl items-center gap-10 px-6 pb-24 pt-8 lg:grid-cols-2">
+      <section class="text-center lg:text-left">
+        <span class="inline-flex rounded-full border-2 border-orange/20 bg-white px-4 py-2 text-sm font-black text-orange shadow-sm">🎟️ ALL ABOARD, BESTIE!</span>
+        <p class="mt-7 text-lg font-extrabold text-sky-700">Ada acara seru nih!</p>
+        <h2 class="mt-3 text-5xl font-black leading-[1.08] sm:text-6xl lg:text-7xl">Yuk, Ikut<br><span class="text-orange">Pesta Bahagia</span><br>Abyan!</h2>
+        <p class="mx-auto mt-6 max-w-xl text-lg font-bold leading-relaxed text-slate-600 lg:mx-0">
+          Halo teman-teman! Aku <strong class="text-ink">Muhammad Abyan Hade Al Fatih</strong>.
+          Aku mau mengadakan tasyakuran khitanan. Datang, ya! Kita seru-seruan dan berdoa bersama! 😄
+        </p>
+        <a href="#detail" class="primary-button mt-8">Cek Tiket Undangan <span>→</span></a>
+        <p class="mt-6 text-sm font-extrabold text-slate-500">Sabtu, 21 November 2026 · 13.00–16.00 WIB</p>
+      </section>
+      <section class="train-scene relative mx-auto w-full max-w-xl" aria-label="Ilustrasi kereta api ceria">
+        <div class="sun"></div><div class="cartoon-cloud cloud-a"></div><div class="cartoon-cloud cloud-b"></div>
+        <div class="hill hill-back"></div><div class="hill hill-front"></div><div class="rail"></div>
+        <div class="train">
+          <div class="smoke">☁️</div>
+          <div class="engine"><div class="chimney"></div><div class="engine-window"></div><div class="engine-face">☺</div><div class="engine-body"></div><div class="wheel wheel-one"></div><div class="wheel wheel-two"></div></div>
+          <div class="wagon wagon-one">🎈<div class="wagon-wheel"></div><div class="wagon-wheel second"></div></div>
+          <div class="wagon wagon-two">🎁<div class="wagon-wheel"></div><div class="wagon-wheel second"></div></div>
+        </div>
+        <div class="scene-label">CHOO CHOO! 🚂</div><div class="star star-one">✦</div><div class="star star-two">✧</div>
+      </section>
+    </main>
+    <div class="track-bottom">🚂　🚃　🚃　🚃　🚃</div>
+  </header>
+
+  <section class="photo-section px-6 py-20">
+    <div class="mx-auto grid max-w-5xl items-center gap-9 md:grid-cols-[.85fr_1.15fr]">
+      <div class="photo-frame mx-auto">
+        <img src="assets/foto-abyan.jpeg" alt="Foto Abyan" class="abyan-photo">
+        <span class="photo-sticker">Itu aku! 😎</span>
+      </div>
+      <div>
+        <p class="font-black uppercase tracking-[.2em] text-orange">Kenalan dulu, yuk!</p>
+        <h2 class="mt-3 text-4xl font-black sm:text-5xl">Si Masinis Hari Bahagia</h2>
+        <p class="mt-5 text-lg font-bold leading-relaxed text-slate-600">Ini dia yang punya acara: <span class="text-ink">Abyan!</span> Aku tunggu kedatangan kalian, teman-teman. Jangan lupa datang, ya. Kehadiran kalian bakal bikin acaraku makin menyenangkan! 💛</p>
+        <div class="mt-6 inline-flex rounded-full bg-butter px-5 py-3 font-black">🎉 Sampai ketemu di sana!</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="detail" class="px-6 py-24">
+    <div class="mx-auto max-w-5xl text-center">
+      <p class="font-black uppercase tracking-[.2em] text-orange">Tiket perjalanan spesial</p>
+      <h2 class="mt-3 text-4xl font-black sm:text-5xl">Catat Tanggalnya, Bestie!</h2>
+      <p class="mt-4 font-bold text-slate-500">Jangan sampai kelewatan, ya!</p>
+      <div class="ticket-card mx-auto mt-10 max-w-4xl overflow-hidden rounded-[2rem] bg-white text-left shadow-xl">
+        <div class="grid md:grid-cols-[1fr_220px]">
+          <div class="p-8 sm:p-10">
+            <div class="flex items-center justify-between"><span class="rounded-full bg-skysoft px-4 py-2 text-xs font-black tracking-widest">SPECIAL INVITATION</span><span class="text-3xl">🎟️</span></div>
+            <p class="mt-8 text-sm font-black uppercase tracking-widest text-slate-400">Tasyakuran Khitanan</p>
+            <h3 class="mt-2 text-3xl font-black text-orange sm:text-4xl">Muhammad Abyan<br>Hade Al Fatih</h3>
+            <p class="mt-4 max-w-xl font-bold leading-relaxed text-slate-500">Dengan senang hati aku mengundang teman-teman untuk datang dan ikut mendoakan. Bakal lebih seru kalau kalian hadir!</p>
+            <div class="mt-8 grid gap-5 sm:grid-cols-2">
+              <div><p class="text-xs font-black uppercase tracking-widest text-slate-400">Hari & Tanggal</p><p class="mt-1 text-lg font-black">Sabtu, 21 November 2026</p></div>
+              <div><p class="text-xs font-black uppercase tracking-widest text-slate-400">Waktu</p><p class="mt-1 text-lg font-black">13.00–16.00 WIB</p></div>
+            </div>
+          </div>
+          <div class="ticket-stub flex flex-col items-center justify-center bg-butter p-8 text-center">
+            <div class="text-5xl">🚂</div><p class="mt-4 text-xs font-black tracking-[.2em]">BOARDING PASS</p><p class="mt-2 text-3xl font-black">AB-021</p><div class="barcode mt-5 h-12 w-full"></div><p class="mt-3 text-xs font-black">DESTINASI: HARI BAHAGIA</p>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto mt-10 max-w-3xl rounded-3xl bg-skysoft/70 p-7">
+        <p class="text-sm font-black uppercase tracking-widest text-slate-500">Hitung mundur menuju acara</p>
+        <div id="countdown" class="mt-5 grid grid-cols-4 gap-3">
+          <div class="count-box"><strong id="days">00</strong><span>Hari</span></div>
+          <div class="count-box"><strong id="hours">00</strong><span>Jam</span></div>
+          <div class="count-box"><strong id="minutes">00</strong><span>Menit</span></div>
+          <div class="count-box"><strong id="seconds">00</strong><span>Detik</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lokasi" class="location-section px-6 py-24">
+    <div class="mx-auto grid max-w-5xl items-center gap-10 md:grid-cols-2">
+      <div>
+        <p class="font-black uppercase tracking-[.2em] text-orange">Stasiun tujuan</p>
+        <h2 class="mt-3 text-4xl font-black sm:text-5xl">Ini Lokasinya!</h2>
+        <p class="mt-5 font-bold leading-relaxed text-slate-600">Catat alamatnya, atau langsung buka petanya supaya nggak nyasar. Kami tunggu, ya!</p>
+        <div class="mt-7 rounded-3xl bg-white p-6 shadow-lg">
+          <p class="text-sm font-black uppercase tracking-widest text-slate-400">Alamat acara</p>
+          <p class="mt-2 text-lg font-black">Jl. Pegadaian RT 01 RW 01</p>
+          <p class="mt-1 font-bold text-slate-500">Kec. Purwosari, Kab. Pasuruan</p>
+          <a href="https://maps.app.goo.gl/rpU9UMa5zEj9fTwp9" target="_blank" rel="noopener" class="primary-button mt-5">📍 Buka Google Maps</a>
+        </div>
+      </div>
+      <div class="map-card flex min-h-72 items-center justify-center rounded-[2rem] bg-white p-8 text-center shadow-xl">
+        <div><div class="text-7xl">📍</div><p class="mt-4 text-2xl font-black">Jangan Sampai Nyasar!</p><p class="mt-2 font-bold text-slate-500">Klik tombol peta untuk melihat rute ke lokasi acara.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="px-6 py-24">
+    <div class="mx-auto max-w-3xl text-center">
+      <div class="text-5xl">💛</div>
+      <h2 class="mt-5 text-4xl font-black">Datang, Ya, Teman-Teman!</h2>
+      <p class="mt-5 font-bold leading-relaxed text-slate-500">Aku bakal senang banget kalau kalian bisa hadir. Yuk, kita rayakan hari spesial ini bersama-sama!</p>
+      <a id="rsvpButton" href="https://wa.me/6285655704609" target="_blank" rel="noopener" class="primary-button mt-8">💬 Konfirmasi via WhatsApp</a>
+      <p class="mt-5 text-sm font-bold text-slate-500">Kontak: +62 856-5570-4609</p>
+      <p class="mt-10 font-extrabold">Salam hangat,</p>
+      <p class="mt-1 text-xl font-black">Keluarga Besar Bpk. Mukhamat Hariyanto</p>
+    </div>
+  </section>
+
+  <footer class="bg-ink px-6 py-8 text-center text-sm font-bold text-white/75">
+    Dibuat dengan ❤️ untuk Abyan dan teman-teman · Kereta Ceria 🚂
+  </footer>
+
+  <button id="musicButton" class="music-button" aria-label="Jeda musik">⏸️ Musik</button>
+  <script src="script.js"></script>
+</body>
+</html>

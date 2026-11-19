@@ -1,0 +1,56 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:#fffaf0}
+.hero{background:linear-gradient(180deg,#bdeeff 0%,#eafaff 65%,#fffaf0 100%)}
+.primary-button{display:inline-flex;align-items:center;justify-content:center;gap:12px;border:0;border-radius:999px;background:#ff963d;padding:14px 25px;color:#fff;font-weight:1000;box-shadow:0 9px 20px #ff963d35;transition:.25s}
+.primary-button:hover{transform:translateY(-3px);background:#f47e20}
+.welcome-screen{position:fixed;inset:0;z-index:10000;display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;background:linear-gradient(150deg,#bdeeff,#fff6dc);padding:24px;transition:opacity .7s,visibility .7s}
+.welcome-screen.hidden{opacity:0;visibility:hidden;pointer-events:none}
+.welcome-card{position:relative;z-index:2;width:min(100%,470px);border:4px dashed #ffd166;border-radius:32px;background:#fff;padding:34px 28px;text-align:center;box-shadow:0 20px 60px #17324d18}
+.welcome-cloud{position:absolute;width:170px;height:50px;border-radius:50px;background:#ffffffaa}
+.welcome-cloud:before,.welcome-cloud:after{content:"";position:absolute;border-radius:50%;background:inherit}
+.welcome-cloud:before{width:70px;height:70px;left:25px;top:-35px}.welcome-cloud:after{width:85px;height:85px;right:20px;top:-43px}
+.cloud-left{top:16%;left:-30px}.cloud-right{right:-30px;top:32%}
+.welcome-train{position:absolute;bottom:4%;font-size:35px;animation:ride 12s linear infinite}
+.top-cloud,.cartoon-cloud{position:absolute;background:#fff;border-radius:999px}
+.train-scene{height:420px;border-radius:48% 48% 35% 35%;background:linear-gradient(#8ed8f8 0 68%,#b8e9a8 68%);overflow:hidden}
+.sun{position:absolute;width:75px;height:75px;border-radius:50%;background:#ffd166;right:12%;top:12%;box-shadow:0 0 0 14px #ffd16633}
+.cartoon-cloud{width:105px;height:30px;top:24%}.cartoon-cloud:before,.cartoon-cloud:after{content:"";position:absolute;background:#fff;border-radius:50%}.cartoon-cloud:before{width:45px;height:45px;left:18px;top:-20px}.cartoon-cloud:after{width:55px;height:55px;right:15px;top:-27px}
+.cloud-a{left:10%}.cloud-b{left:52%;top:13%;transform:scale(.7)}
+.hill{position:absolute;bottom:75px;width:75%;height:155px;border-radius:50% 50% 0 0}.hill-back{left:-15%;background:#9bdc9b}.hill-front{right:-20%;bottom:45px;background:#75c893}
+.rail{position:absolute;bottom:55px;left:0;width:100%;height:15px;background:repeating-linear-gradient(90deg,#8b6547 0 22px,transparent 22px 38px);border-top:5px solid #64748b;border-bottom:5px solid #64748b}
+.train{position:absolute;bottom:70px;left:8%;display:flex;align-items:flex-end;animation:chug 4s ease-in-out infinite}
+.engine{position:relative;width:150px;height:115px;background:#ff9f43;border:6px solid #17324d;border-radius:20px 24px 10px 10px}
+.engine-body{position:absolute;left:-15px;bottom:0;width:155px;height:42px;background:#f97316;border:5px solid #17324d;border-radius:12px}
+.chimney{position:absolute;left:22px;top:-43px;width:30px;height:44px;background:#ef4444;border:5px solid #17324d;border-radius:8px 8px 0 0}
+.engine-window{position:absolute;right:18px;top:18px;width:45px;height:38px;background:#bae6fd;border:5px solid #17324d;border-radius:10px;z-index:2}
+.engine-face{position:absolute;z-index:3;left:18px;top:20px;width:48px;height:48px;border-radius:50%;background:#ffdca8;border:4px solid #17324d;text-align:center;line-height:40px;font-size:27px;font-weight:900}
+.wheel,.wagon-wheel{position:absolute;z-index:4;bottom:-23px;width:42px;height:42px;background:#334155;border:7px solid #f8fafc;border-radius:50%;box-shadow:0 0 0 4px #17324d}
+.wheel-one{left:20px}.wheel-two{right:15px}
+.wagon{position:relative;width:105px;height:75px;margin-left:8px;border:5px solid #17324d;border-radius:12px 12px 5px 5px;background:#8ed8f8;text-align:center;font-size:36px;padding-top:5px}
+.wagon-two{background:#ffd166}.wagon-wheel{bottom:-20px;left:12px;width:32px;height:32px;border-width:5px}.wagon-wheel.second{left:auto;right:12px}
+.smoke{position:absolute;top:-82px;left:25px;font-size:32px;animation:puff 2s ease-in-out infinite}
+.scene-label{position:absolute;bottom:18px;right:20px;color:#17324d;font-weight:1000;letter-spacing:3px;font-size:12px}
+.star{position:absolute;color:#fff;font-size:42px;text-shadow:0 2px 0 #ff9f43;animation:twinkle 2s infinite alternate}.star-one{top:35%;right:14%}.star-two{top:52%;left:12%;animation-delay:.8s}
+.track-bottom{padding:12px;background:#17324d;color:#fff;text-align:center;font-size:24px;letter-spacing:8px}
+.photo-section{background:#fffaf0}
+.photo-frame{position:relative;width:min(100%,340px);padding:12px;border:4px dashed #ffd166;border-radius:32px;background:white;box-shadow:0 15px 40px #17324d15;transform:rotate(-2deg)}
+.abyan-photo{display:block;width:100%;height:420px;object-fit:cover;object-position:center 35%;border-radius:22px}
+.photo-sticker{position:absolute;right:-16px;bottom:25px;transform:rotate(7deg);border-radius:999px;background:#80c99b;padding:10px 18px;color:#fff;font-weight:1000;box-shadow:0 5px 15px #17324d20}
+.ticket-card{border:3px dashed #ffd166}
+.ticket-stub{position:relative}
+.ticket-stub:before,.ticket-stub:after{content:"";position:absolute;left:-15px;width:30px;height:30px;border-radius:50%;background:#fffaf0}
+.ticket-stub:before{top:-15px}.ticket-stub:after{bottom:-15px}
+.barcode{background:repeating-linear-gradient(90deg,#17324d 0 3px,transparent 3px 6px,#17324d 6px 8px,transparent 8px 12px)}
+.count-box{display:flex;flex-direction:column;gap:4px;border-radius:18px;background:#fff;padding:14px 5px;box-shadow:0 5px 18px #17324d0d}
+.count-box strong{font-size:clamp(1.5rem,4vw,2.3rem);font-weight:1000;color:#f97316;line-height:1.1}
+.count-box span{font-size:.72rem;font-weight:900;color:#64748b;text-transform:uppercase;letter-spacing:.08em}
+.location-section{background:#dff5ff}
+.map-card{background-image:radial-gradient(#8ed8f8 1.5px,transparent 1.5px);background-size:20px 20px}
+.music-button{position:fixed;right:18px;bottom:18px;z-index:999;background:#17324d;color:white;border:3px solid white;border-radius:999px;padding:12px 18px;font-weight:1000;box-shadow:0 6px 20px #17324d35;cursor:pointer}
+.music-button:hover{transform:translateY(-2px)}
+@keyframes chug{0%,100%{transform:translateX(0)}50%{transform:translateX(10px)}}
+@keyframes puff{0%{opacity:.3;transform:translateY(10px) scale(.8)}100%{opacity:1;transform:translateY(-5px) scale(1.15)}}
+@keyframes twinkle{from{transform:scale(.8) rotate(-10deg);opacity:.65}to{transform:scale(1.15) rotate(10deg);opacity:1}}
+@keyframes ride{0%{transform:translateX(-50vw)}100%{transform:translateX(50vw)}}
+@media(max-width:640px){.train-scene{height:330px}.train{left:1%;transform:scale(.78);transform-origin:bottom left}.engine{width:130px}.wagon{width:85px}.ticket-stub:before,.ticket-stub:after{display:none}.abyan-photo{height:390px}}
